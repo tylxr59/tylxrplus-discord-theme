@@ -54,8 +54,9 @@
 /* Direct Messages and Server Channels */
 .sidebar_a4d4d9,
 .container_ee69e0,
-
 .privateChannels_f0963d,
+.privateChannels_f0963d .thin_eed6a8,
+.members_cbd271 .content_eed6a8,
 .title_a7d72e {
     background: none;
     background-color: var(--tylxrplus-bg) !important;
