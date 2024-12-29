@@ -1,0 +1,161 @@
+/**
+  * @name tylxr+
+  * @author tylxr
+  * @version 1.0
+  * @description Semi-vanilla Discord theme with a purple color scheme.
+  * @authorId 210581909565079553
+  * @source https://github.com/tylxr59/tylxrplus-discord-theme
+  * @website https://tylxr.com/
+  * @donate https://www.eff.org/pages/donate-eff
+*/
+
+:root {
+    --tylxrplus-bg: #1a1a1a;
+    --tylxrplus-muted-bg: #444;
+    --tylxrplus-sec: #202020;
+    --tylxrplus-theme-color: #ab9df2;
+    --tylxrplus-theme-strong-color: #927EF1;
+    --tylxrplus-home-icon: url(https://tylxr.com/img/x-logo-circle.png);
+    --tylxrplus-divider-color: #5a5a5a;
+    --watermark-filter-invert: 0%;
+    --watermark-filter-sepia: 50%;
+    --watermark-filter-saturate: 3000%;
+    --watermark-filter-hue-rotate: 210deg;
+    --watermark-filter-brightness: 70%;
+    --watermark-filter-contrast: 200%;
+}
+
+/* In-chat Links */
+.anchor_af404b {
+    color: var(--tylxrplus-theme-strong-color) !important;
+}
+
+.anchor_af404b:hover {
+    color: var(--tylxrplus-theme-color) !important;
+}
+
+/* Icon */
+.wrapper_f90abb[data-list-item-id="guildsnav___home"] .childWrapper_f90abb {
+    background: var(--tylxrplus-home-icon) center/cover no-repeat;
+    min-width: 50px;
+    min-height: 50px;
+}
+
+.wrapper_f90abb[data-list-item-id="guildsnav___home"] .childWrapper_f90abb svg {
+    display: none;
+}
+
+
+/* Server/DM Bar */
+.itemsContainer_fea3ef {
+    background-color: var(--tylxrplus-bg);
+}
+
+/* Direct Messages and Server Channels */
+.sidebar_a4d4d9,
+.container_ee69e0,
+.scroller_c43953,
+.scroller_c47fa9,
+.content_eed6a8,
+.privateChannels_f0963d,
+.header_fd6364,
+.title_a7d72e {
+    background: none;
+    background-color: var(--tylxrplus-bg) !important;
+}
+
+.mention {
+    background-color: var(--tylxrplus-muted-bg);
+    color: var(--tylxrplus-theme-color)
+}
+
+.mention:hover {
+    background-color: var(--tylxrplus-muted-bg);
+    color: var(--tylxrplus-theme-strong-color)
+}
+
+.chatContent_a7d72e {
+    background-color: var(--tylxrplus-sec);
+}
+
+/* Bot/App Tag */
+.botTagRegular_a9e77f {
+    background-color: #6365CF;
+    color: var(--tylxrplus-bg);
+}
+
+/* Channel Categories and Server Name */
+.name_a08117, .name_fd6364 {
+    color: var(--tylxrplus-theme-color);
+}
+
+/* Default Username Color */
+.username_f9f2ca {
+    color: #ead1ff;
+}
+
+.scrollableContainer_bdf0de {
+    border: 2px solid var(--tylxrplus-theme-color);
+    border-radius: 5px;
+    background-color: var(--tylxrplus-sec);
+}
+
+/* Hide Discover Content */
+.footer_d71945 {
+    display: none;
+}
+
+/* Server activity & Unread notification */
+.item_c4cd66 {
+    background-color: var(--tylxrplus-theme-color);
+}
+
+.numberBadge_df8943 {
+    background-color: #FF739D !important;
+    color: var(--tylxrplus-bg) !important;
+}
+
+/* New Server Button */
+.circleIconButton_db6521 {
+    color: var(--tylxrplus-theme-color);
+}
+
+.circleIconButton_db6521:hover {
+    background-color: var(--tylxrplus-theme-color);
+}
+
+/* Folder Icons */
+.closedFolderIconWrapper_bc7085 {
+    background-color: #7e77a7;
+}
+
+.expandedFolderIconWrapper_bc7085 svg {
+    color: var(--tylxrplus-theme-strong-color) !important;
+}
+
+/* Search Bars and Chat Bar */
+.searchBarComponent_f0963d,
+.searchBar_a46bef {
+    border: 1px solid var(--tylxrplus-theme-color);
+    border-radius: 2px;
+    background-color: var(--tylxrplus-sec);
+}
+
+/* Hide App Launcher */
+.channelAppLauncher_df39bd {
+    display: none;
+}
+
+.theme-dark .children_fc4f04:after {
+    background: none;
+}
+
+/* Divider Themeing */
+.divider_d5deea {
+    border-top-color: var(--tylxrplus-divider-color);
+}
+
+.content_c2654d {
+    background-color: var(--tylxrplus-sec);
+    color: var(--tylxrplus-divider-color)
+}
