@@ -54,11 +54,8 @@
 /* Direct Messages and Server Channels */
 .sidebar_a4d4d9,
 .container_ee69e0,
-.scroller_c43953,
-.scroller_c47fa9,
-.content_eed6a8,
+
 .privateChannels_f0963d,
-.header_fd6364,
 .title_a7d72e {
     background: none;
     background-color: var(--tylxrplus-bg) !important;
@@ -100,17 +97,21 @@
     background-color: var(--tylxrplus-sec);
 }
 
+.member_cbd271 {
+    background: none !important;
+}
+
 /* Hide Discover Content */
 .footer_d71945 {
     display: none;
 }
 
-/* Server activity & Unread notification */
+/* Server activity, Unread notification + Live Badge */
 .item_c4cd66 {
     background-color: var(--tylxrplus-theme-color);
 }
 
-.numberBadge_df8943 {
+.numberBadge_df8943, .live_ec1c2d {
     background-color: #FF739D !important;
     color: var(--tylxrplus-bg) !important;
 }
