@@ -120,6 +120,10 @@ rect[mask="url(#svg-mask-status-dnd)"], rect[mask="url(#:r6c:)"] {
     background: var(--tylxrplus-theme-dark-color);
 }
 
+.mentioned_d5deea:hover {
+    background: #332e47;
+}
+
 .mentioned_d5deea:before {
     background: var(--tylxrplus-theme-color);
 }
