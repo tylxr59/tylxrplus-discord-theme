@@ -1,7 +1,7 @@
 /**
   * @name tylxr+
   * @author tylxr
-  * @version 1.0
+  * @version 1.1
   * @description Semi-vanilla Discord theme with a purple color scheme.
   * @authorId 210581909565079553
   * @source https://github.com/tylxr59/tylxrplus-discord-theme
@@ -23,6 +23,36 @@
     --watermark-filter-hue-rotate: 210deg;
     --watermark-filter-brightness: 70%;
     --watermark-filter-contrast: 200%;
+
+    --tylxrplus-default-username-color: #ead1ff;
+
+    --tylxrplus-purple: #ab9df2;
+    --tylxrplus-red: #FF739D;
+    --tylxrplus-green: #85c771;
+    --tylxrplus-yellow: #FFEE87;
+
+    /* Overrides for some Discord variables */
+    --text-brand: #ab9df2;
+    --badge-brand-bg: #ab9df2;
+    --badge-brand-text: #3b3653;
+    --text-positive: var(--tylxrplus-green);
+}
+
+/* Statuses */
+rect[mask="url(#svg-mask-status-online)"], rect[mask="url(#svg-mask-status-online-mobile)"], rect[mask="url(#:r68:)"], rect[mask="url(#:r6o:)"] {
+    fill: var(--tylxrplus-green);
+}
+
+rect[mask="url(#svg-mask-status-streaming)"], rect[mask="url(#:r69:)"] {
+    fill: var(--tylxrplus-purple);
+}
+
+rect[mask="url(#svg-mask-status-idle)"], rect[mask="url(#:r6a:)"] {
+    fill: var(--tylxrplus-yellow);
+}
+
+rect[mask="url(#svg-mask-status-dnd)"], rect[mask="url(#:r6c:)"] {
+    fill: var(--tylxrplus-red);
 }
 
 /* In-chat Links */
@@ -51,6 +81,11 @@
     background-color: var(--tylxrplus-bg);
 }
 
+/* Chat title SVG */
+.children_fc4f04 .iconWrapper_fc4f04 .icon_fc4f04 path {
+    fill: var(--tylxrplus-theme-color);
+}
+
 /* Direct Messages and Server Channels */
 .sidebar_a4d4d9,
 .container_ee69e0,
@@ -62,16 +97,18 @@
     background-color: var(--tylxrplus-bg) !important;
 }
 
-.mention {
-    background-color: var(--tylxrplus-muted-bg);
-    color: var(--tylxrplus-theme-color)
+/* User Mentions, Channel Mentions, etc... */
+.mention, .channelMention {
+    background-color: #3b3653;
+    color: #ab9df2;
 }
 
-.mention:hover {
-    background-color: var(--tylxrplus-muted-bg);
-    color: var(--tylxrplus-theme-strong-color)
+.mention:hover, .channelMention:hover {
+    background-color: #7066a0;
+    color: #d1c7ff;
 }
 
+/* Main Chat Panel */
 .chatContent_a7d72e {
     background-color: var(--tylxrplus-sec);
 }
@@ -82,22 +119,28 @@
     color: var(--tylxrplus-bg);
 }
 
-/* Channel Categories and Server Name */
-.name_a08117, .name_fd6364 {
+.botTagVerified_a9e77f path {
+    fill: var(--tylxrplus-bg);
+}
+
+/* Channel Categories and User Groups */
+.name_a08117, .membersGroup_cbd271 {
     color: var(--tylxrplus-theme-color);
 }
 
 /* Default Username Color */
 .username_f9f2ca {
-    color: #ead1ff;
+    color: var(--tylxrplus-default-username-color);
 }
 
+/* Chat Box */
 .scrollableContainer_bdf0de {
     border: 2px solid var(--tylxrplus-theme-color);
     border-radius: 5px;
     background-color: var(--tylxrplus-sec);
 }
 
+/* No bg for users in userlist */
 .member_cbd271 {
     background: none !important;
 }
@@ -113,7 +156,7 @@
 }
 
 .numberBadge_df8943, .live_ec1c2d {
-    background-color: #FF739D !important;
+    background-color: var(--tylxrplus-red) !important;
     color: var(--tylxrplus-bg) !important;
 }
 
