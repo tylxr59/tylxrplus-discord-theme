@@ -1,7 +1,7 @@
 /**
   * @name tylxr+
   * @author tylxr
-  * @version 1.1
+  * @version 1.1.1
   * @description Semi-vanilla Discord theme with a purple color scheme.
   * @authorId 210581909565079553
   * @source https://github.com/tylxr59/tylxrplus-discord-theme
@@ -11,36 +11,44 @@
 
 :root {
     --tylxrplus-bg: #1a1a1a;
-    --tylxrplus-muted-bg: #444;
-    --tylxrplus-sec: #202020;
+    --tylxrplus-secondary-bg: #202020;
+    --tylxrplus-tertiary-bg: #181818;
     --tylxrplus-theme-color: #ab9df2;
+    --tylxrplus-theme-dark-color: #3b3653;
     --tylxrplus-theme-strong-color: #927EF1;
     --tylxrplus-home-icon: url(https://tylxr.com/img/x-logo-circle.png);
     --tylxrplus-divider-color: #5a5a5a;
-    --watermark-filter-invert: 0%;
+    /* --watermark-filter-invert: 0%;
     --watermark-filter-sepia: 50%;
     --watermark-filter-saturate: 3000%;
     --watermark-filter-hue-rotate: 210deg;
     --watermark-filter-brightness: 70%;
-    --watermark-filter-contrast: 200%;
+    --watermark-filter-contrast: 200%; */
 
-    --tylxrplus-default-username-color: #ead1ff;
+    --tylxrplus-default-username-color: #b8b2c9;
 
     --tylxrplus-purple: #ab9df2;
-    --tylxrplus-red: #FF739D;
-    --tylxrplus-green: #85c771;
+    --tylxrplus-red: #fa657e;
+    --tylxrplus-green: #7dce64;
     --tylxrplus-yellow: #FFEE87;
+    --tylxrplus-pink: #fa7ac4;
 
     /* Overrides for some Discord variables */
-    --text-brand: #ab9df2;
+    --saturation-factor: 0.1;
+    --brand-500: var(--tylxrplus-theme-dark-color);
+    --text-brand: var(--tylxrplus-theme-color);
     --badge-brand-bg: #ab9df2;
-    --badge-brand-text: #3b3653;
+    --badge-brand-text: var(--tylxrplus-theme-dark-color);
     --text-positive: var(--tylxrplus-green);
+    --guild-boosting-pink: var(--tylxrplus-pink);
+    --background-secondary: var(--tylxrplus-bg);
+    --background-secondary-alt: var(--tylxrplus-bg);
 }
 
 /* Statuses */
-rect[mask="url(#svg-mask-status-online)"], rect[mask="url(#svg-mask-status-online-mobile)"], rect[mask="url(#:r68:)"], rect[mask="url(#:r6o:)"] {
+rect[mask="url(#svg-mask-status-online)"], .status_c7d26b, rect[mask="url(#svg-mask-status-online-mobile)"], rect[mask="url(#:r93:)"], rect[mask="url(#:r95:)"], rect[mask="url(#:r68:)"], rect[mask="url(#:r6o:)"] {
     fill: var(--tylxrplus-green);
+    background-color: var(--tylxrplus-green) !important;
 }
 
 rect[mask="url(#svg-mask-status-streaming)"], rect[mask="url(#:r69:)"] {
@@ -78,7 +86,7 @@ rect[mask="url(#svg-mask-status-dnd)"], rect[mask="url(#:r6c:)"] {
 
 /* Server/DM Bar */
 .itemsContainer_fea3ef {
-    background-color: var(--tylxrplus-bg);
+    background-color: var(--tylxrplus-tertiary-bg);
 }
 
 /* Chat title SVG */
@@ -108,9 +116,17 @@ rect[mask="url(#svg-mask-status-dnd)"], rect[mask="url(#:r6c:)"] {
     color: #d1c7ff;
 }
 
+.mentioned_d5deea {
+    background: var(--tylxrplus-theme-dark-color);
+}
+
+.mentioned_d5deea:before {
+    background: var(--tylxrplus-theme-color);
+}
+
 /* Main Chat Panel */
 .chatContent_a7d72e {
-    background-color: var(--tylxrplus-sec);
+    background-color: var(--tylxrplus-secondary-bg);
 }
 
 /* Bot/App Tag */
@@ -137,12 +153,16 @@ rect[mask="url(#svg-mask-status-dnd)"], rect[mask="url(#:r6c:)"] {
 .scrollableContainer_bdf0de {
     border: 2px solid var(--tylxrplus-theme-color);
     border-radius: 5px;
-    background-color: var(--tylxrplus-sec);
+    background-color: var(--tylxrplus-secondary-bg);
 }
 
 /* No bg for users in userlist */
 .member_cbd271 {
     background: none !important;
+}
+
+.container_c64476 {
+    background-color: var(--tylxrplus-secondary-bg);
 }
 
 /* Hide Discover Content */
@@ -183,7 +203,7 @@ rect[mask="url(#svg-mask-status-dnd)"], rect[mask="url(#:r6c:)"] {
 .searchBar_a46bef {
     border: 1px solid var(--tylxrplus-theme-color);
     border-radius: 2px;
-    background-color: var(--tylxrplus-sec);
+    background-color: var(--tylxrplus-secondary-bg);
 }
 
 /* Hide App Launcher */
@@ -201,6 +221,6 @@ rect[mask="url(#svg-mask-status-dnd)"], rect[mask="url(#:r6c:)"] {
 }
 
 .content_c2654d {
-    background-color: var(--tylxrplus-sec);
+    background-color: var(--tylxrplus-secondary-bg);
     color: var(--tylxrplus-divider-color)
 }
