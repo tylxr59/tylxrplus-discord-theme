@@ -1,7 +1,7 @@
 /**
   * @name tylxr+
   * @author tylxr
-  * @version 1.1.1
+  * @version 1.1.2
   * @description Semi-vanilla Discord theme with a purple color scheme.
   * @authorId 210581909565079553
   * @source https://github.com/tylxr59/tylxrplus-discord-theme
@@ -46,7 +46,7 @@
 }
 
 /* Statuses */
-rect[mask="url(#svg-mask-status-online)"], .status_c7d26b, rect[mask="url(#svg-mask-status-online-mobile)"], rect[mask="url(#:r93:)"], rect[mask="url(#:r95:)"], rect[mask="url(#:r68:)"], rect[mask="url(#:r6o:)"] {
+rect[mask="url(#svg-mask-status-online)"], .status_c7d26b, rect[mask="url(#svg-mask-status-online-mobile)"], rect[mask="url(#:r93:)"], rect[mask="url(#:r15:)"], rect[mask="url(#:r95:)"], rect[mask="url(#:r68:)"], rect[mask="url(#:r6o:)"] {
     fill: var(--tylxrplus-green);
     background-color: var(--tylxrplus-green) !important;
 }
@@ -59,8 +59,8 @@ rect[mask="url(#svg-mask-status-idle)"], rect[mask="url(#:r6a:)"] {
     fill: var(--tylxrplus-yellow);
 }
 
-rect[mask="url(#svg-mask-status-dnd)"], rect[mask="url(#:r6c:)"] {
-    fill: var(--tylxrplus-red);
+rect[mask="url(#svg-mask-status-dnd)"], rect[mask="url(#:r6c:)"], rect[mask="url(#:r28:)"], rect[mask="url(#:r29:)"], rect[mask="url(#:r2h:)"]  {
+    fill: var(--tylxrplus-red) !important;
 }
 
 /* In-chat Links */
