@@ -45,6 +45,7 @@
     --guild-boosting-pink: var(--tylxrplus-pink);
     --background-secondary: var(--tylxrplus-bg);
     --background-secondary-alt: var(--tylxrplus-bg);
+    --bg-base-primary: var(--tylxrplus-bg);
 }
 
 /* Statuses */
