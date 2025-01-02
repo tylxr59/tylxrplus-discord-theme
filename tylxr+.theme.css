@@ -1,7 +1,7 @@
 /**
   * @name tylxr+
   * @author tylxr
-  * @version 1.1.3
+  * @version 1.1.4
   * @description Semi-vanilla Discord theme with a purple color scheme.
   * @authorId 210581909565079553
   * @source https://github.com/tylxr59/tylxrplus-discord-theme
@@ -45,7 +45,8 @@
     --guild-boosting-pink: var(--tylxrplus-pink);
     --background-secondary: var(--tylxrplus-bg);
     --background-secondary-alt: var(--tylxrplus-bg);
-    --bg-base-primary: var(--tylxrplus-bg);
+    --bg-base-primary: var(--tylxrplus-secondary-bg);
+    --green-330: var(--tylxrplus-green);
 }
 
 /* Statuses */
@@ -118,8 +119,9 @@ rect[mask="url(#svg-mask-status-dnd)"], rect[mask="url(#:r6c:)"], rect[mask="url
     color: #ab9df2;
 }
 
-.mention:hover, .channelMention:hover, .wrapper_bf1b19:hover {
-    background-color: #7066a0;
+.mention:hover, .channelMention:hover, .wrapper_bf1b19:hover, .message_d5deea.mentioned_d5deea:hover {
+    background-color: #4b456b;
+    background: #4b456b;
     color: #d1c7ff;
 }
 
